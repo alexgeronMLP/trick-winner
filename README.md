@@ -1,4 +1,4 @@
-# Symfony 4.0 + Docker
+# Tricks winners
 
 ## Credits
 To help setting up this project, I used [the following repo](https://github.com/guham/symfony-docker) 
