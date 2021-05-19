@@ -1,5 +1,8 @@
 # Symfony 4.0 + Docker
 
+## Credits
+To help setting up this project, I used [the following repo](https://github.com/guham/symfony-docker) 
+
 ##  Requirements
 
 - [Docker](https://docs.docker.com/engine/installation/) installed
