@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -35,11 +36,21 @@ class DefaultController extends AbstractController
         
         $trump = $object['TRUMP'] ?? '';
         $tricks = $object['TRICKS'];
+       
+        if (count($tricks) > 13) {
+            throw new Exception('You can\'t have more than 13 tricks.');
+        }
+
         $winners = [];
 
         foreach ($tricks as $trick) {
             $winner = null;
             $trumpWinner = null;
+
+            if (count($trick) > 4) {
+                throw new Exception('You can\'t have more than 4 players.');
+            }
+
             foreach ($trick as $player) {
                 if (!isset($winner['value']) || $cards[$winner['value']] < $cards[$player['value']]) {
                     $winner = $player;
