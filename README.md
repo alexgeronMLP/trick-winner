@@ -14,16 +14,13 @@ To help setting up this project, I used [the following repo](https://github.com/
     ```bash
     $ git clone https://github.com/guham/symfony-docker.git
     ```
-2. Update the Docker `.env` file according to your needs. The `NGINX_HOST` environment variable allows you to use a custom server name
-
-3. Add the server name in your system host file
-
-4. Copy the `symfony/.env.dist` file to `symfony/.env`
+    
+2. Copy the `symfony/.env.dist` file to `symfony/.env`
     ```bash
     $ cp symfony/.env.dist symfony/.env
     ```
 
-5. Build & run containers with `docker-compose` by specifying a second compose file, e.g., with MySQL 
+3. Build & run containers with `docker-compose` by specifying a second compose file, e.g., with MySQL 
     ```bash
     $ docker-compose -f docker-compose.yaml -f docker-compose.mysql.yaml build
     ```
@@ -33,7 +30,7 @@ To help setting up this project, I used [the following repo](https://github.com/
     ```
    
 
-6. Composer install
+4. Composer install
 
     first, configure permissions on `symfony/var` folder
     ```bash
