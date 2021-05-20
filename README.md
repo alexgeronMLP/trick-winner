@@ -58,19 +58,19 @@ Pass a list of tricks to the application (13 maximum) and get list of winners.
 
 # **List of cards**
 
-1 or Ace
-King
-Queen
-Jack
-10
-9
-8
-7
-6
-5
-4
-3
-2
+- 1 or Ace
+- King
+- Queen
+- Jack
+- 10
+- 9
+- 8
+- 7
+- 6
+- 5
+- 4
+- 3
+- 2
 
 # **Body of the request**
 
